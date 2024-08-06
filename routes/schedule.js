@@ -6,7 +6,7 @@ let schedules = [
   { id: 2, day: 'Tuesday', subject: 'Science', time: '10:00 AM' },
 ];
 
-// Get all schedules //
+// Get all schedules
 router.get('/', (_req, res) => {
   res.json(schedules);
 });
