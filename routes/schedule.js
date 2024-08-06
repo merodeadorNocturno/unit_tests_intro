@@ -6,8 +6,8 @@ let schedules = [
   { id: 2, day: 'Tuesday', subject: 'Science', time: '10:00 AM' },
 ];
 
-// Get all schedules
-router.get('/', (req, res) => {
+// Get all schedules //
+router.get('/', (_req, res) => {
   res.json(schedules);
 });
 
@@ -27,7 +27,7 @@ router.put('/:id', (req, res) => {
   schedule.subject = req.body.subject;
   schedule.time = req.body.time;
 
-  res.status(200).send(schedule);
+  res.status(201).send(schedule);
 });
 
 module.exports = router;
